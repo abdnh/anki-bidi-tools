@@ -72,8 +72,8 @@ def create_insert_menu(editor: Editor) -> QMenu:
 actions = (
     ("Left-To-Right", ltr_block_action, config.get("ltr_block_shortcut", config_defaults["ltr_block_shortcut"])),
     ("Right-To-Left", rtl_block_action, config.get("rtl_block_shortcut", config_defaults["rtl_block_shortcut"])),
-    ("LTR inline", ltr_inline_action, config.get("ltr_inline_shortcut", config_defaults["ltr_inline_shortcut"])),
-    ("RTL inline", rtl_inline_action, config.get("rtl_inline_shortcut", config_defaults["rtl_inline_shortcut"])),
+    ("LTR Selected", ltr_inline_action, config.get("ltr_inline_shortcut", config_defaults["ltr_inline_shortcut"])),
+    ("RTL Selected", rtl_inline_action, config.get("rtl_inline_shortcut", config_defaults["rtl_inline_shortcut"])),
 )
 
 editor_button_labels = ("ltr", "rtl")

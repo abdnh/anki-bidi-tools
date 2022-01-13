@@ -121,8 +121,8 @@ The following actions are available in the editor:
   of the entire line where the cursor is currently at.
 2. **Right-To-Left**: Ditto, but for RTL.
 3. More options under the third icon:
-   - **LTR inline**: Apply left-to-right to direction to the selected text only.
-   - **RTL inline**: Ditto, but for RTL.
+   - **LTR Selected**: Apply left-to-right to direction to the selected text only.
+   - **RTL Selected**: Ditto, but for RTL.
    - **Insert Characters**: A menu for inserting common Unicode characters used to affect text directionality.
      You probably don't need to use any of these as the previous options should cover most cases,
      but see <https://en.wikipedia.org/wiki/Bidirectional_text#Unicode_bidi_support> for an explanation of the characters.
