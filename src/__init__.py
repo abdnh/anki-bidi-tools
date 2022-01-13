@@ -7,6 +7,7 @@ from aqt.editor import Editor
 from aqt.qt import *
 from aqt.utils import qtMenuShortcutWorkaround
 
+from .i18n import tr
 
 addon_dir = os.path.dirname(__file__)
 config = mw.addonManager.getConfig(__name__)
@@ -64,16 +65,16 @@ def create_insert_menu(editor: Editor) -> QMenu:
     for name, char in chars:
         a = m.addAction(name)
         qconnect(a.triggered, lambda t, char=char: insert_char(editor, char))
-    m.setTitle("Insert Characters")
+    m.setTitle(tr('insert_chars'))
 
     return m
 
 
 actions = (
-    ("Left-To-Right", ltr_block_action, config.get("ltr_block_shortcut", config_defaults["ltr_block_shortcut"])),
-    ("Right-To-Left", rtl_block_action, config.get("rtl_block_shortcut", config_defaults["rtl_block_shortcut"])),
-    ("LTR Selected", ltr_inline_action, config.get("ltr_inline_shortcut", config_defaults["ltr_inline_shortcut"])),
-    ("RTL Selected", rtl_inline_action, config.get("rtl_inline_shortcut", config_defaults["rtl_inline_shortcut"])),
+    (tr('ltr_block_label'), ltr_block_action, config.get("ltr_block_shortcut", config_defaults["ltr_block_shortcut"])),
+    (tr('rtl_block_label'), rtl_block_action, config.get("rtl_block_shortcut", config_defaults["rtl_block_shortcut"])),
+    (tr('ltr_inline_label'), ltr_inline_action, config.get("ltr_inline_shortcut", config_defaults["ltr_inline_shortcut"])),
+    (tr('rtl_inline_label'), rtl_inline_action, config.get("rtl_inline_shortcut", config_defaults["rtl_inline_shortcut"])),
 )
 
 editor_button_labels = ("ltr", "rtl")
@@ -106,7 +107,7 @@ def add_editor_button(buttons: List[str], editor: Editor) -> None:
     button = editor.addButton(
         icon=os.path.join(addon_dir, "icons/icon.svg"),
         cmd="bidi_tools",
-        tip="Bidirectional Text Tools",
+        tip=tr('addon_name'),
         func=on_button_click
     )
     buttons.append(button)
