@@ -68,18 +68,19 @@ def create_insert_menu(editor: Editor) -> QMenu:
 
     return m
 
-# TODO: icons?
+
 actions = (
-    ("LTR block", ltr_block_action, config.get("ltr_block_shortcut", config_defaults["ltr_block_shortcut"])),
-    ("RTL block", rtl_block_action, config.get("rtl_block_shortcut", config_defaults["rtl_block_shortcut"])),
+    ("Left-To-Right", ltr_block_action, config.get("ltr_block_shortcut", config_defaults["ltr_block_shortcut"])),
+    ("Right-To-Left", rtl_block_action, config.get("rtl_block_shortcut", config_defaults["rtl_block_shortcut"])),
     ("LTR inline", ltr_inline_action, config.get("ltr_inline_shortcut", config_defaults["ltr_inline_shortcut"])),
     ("RTL inline", rtl_inline_action, config.get("rtl_inline_shortcut", config_defaults["rtl_inline_shortcut"])),
 )
 
+editor_button_labels = ("ltr", "rtl")
 
 def on_button_click(editor: Editor):
     m = QMenu(editor.mw)
-    for text, handler, shortcut in actions:
+    for text, handler, shortcut in actions[2:]:
         a = m.addAction(text)
         qconnect(a.triggered, lambda t, cb=handler: cb(editor))
         if shortcut:
@@ -91,6 +92,17 @@ def on_button_click(editor: Editor):
 
 
 def add_editor_button(buttons: List[str], editor: Editor) -> None:
+    for i, (text, handler, shortcut) in enumerate(actions[0:2]):
+        label = editor_button_labels[i]
+        btn = editor.addButton(
+            icon=os.path.join(addon_dir, f"icons/{label}.svg"),
+            cmd=f"bidi_tools_{label}",
+            tip=f"{text} ({shortcut})",
+            func=handler,
+            keys=shortcut,
+        )
+        buttons.append(btn)
+
     button = editor.addButton(
         icon=os.path.join(addon_dir, "icons/icon.svg"),
         cmd="bidi_tools",
@@ -101,7 +113,7 @@ def add_editor_button(buttons: List[str], editor: Editor) -> None:
 
 
 def add_shortcuts(shortcuts: List[Tuple], editor: Editor) -> None:
-    for text, handler, shortcut in actions:
+    for text, handler, shortcut in actions[2:]:
         if shortcut:
             shortcuts.append((shortcut, lambda cb=handler: cb(editor)))
 

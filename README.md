@@ -113,16 +113,19 @@ The add-on provides buttons to set the direction of the selected text to either 
 (left to right, like the Latin script and most scripts), or RTL (right to left,
 like in Arabic, Hebrew, Persian, etc.)
 
-The following menu items are available under the add-on's icon in the editor:
-- **LTR block**: Apply left-to-right direction to the [HTML block element](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
-  surrounding the selected text (if any). If you're not familiar with HTML, you think of this as roughly setting the direction
+![Add-on's buttons in the editor](demo/editor.png)
+
+The following actions are available in the editor:
+1. **Left-To-Right**: Apply left-to-right direction to the [HTML block element](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
+  surrounding the selected text (if any). If you're not familiar with HTML, you can think of this as roughly setting the direction
   of the entire line where the cursor is currently at.
-- **RTL block**: Ditto, but for RTL.
-- **LTR inline**: Apply left-to-right to direction to the selected text only.
-- **RTL inline**: Ditto, but for RTL.
-- **Insert Characters**: A menu for inserting common Unicode characters used to affect text directionality.
-  You probably don't need to use any of these as the previous options should cover most cases,
-  but see <https://en.wikipedia.org/wiki/Bidirectional_text#Unicode_bidi_support> for an explanation of the characters.
+2. **Right-To-Left**: Ditto, but for RTL.
+3. More options under the third icon:
+   - **LTR inline**: Apply left-to-right to direction to the selected text only.
+   - **RTL inline**: Ditto, but for RTL.
+   - **Insert Characters**: A menu for inserting common Unicode characters used to affect text directionality.
+     You probably don't need to use any of these as the previous options should cover most cases,
+     but see <https://en.wikipedia.org/wiki/Bidirectional_text#Unicode_bidi_support> for an explanation of the characters.
 
 ## TODO
 
