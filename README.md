@@ -19,7 +19,7 @@ Let's say we want to type the sentence `hello world مرحبا بالعالم` (
 in a field configured as left-to-right (the default). This is how one
 would normally type such text:
 
-<video src="demo/1.webm" type="video/webm" width="400" height="300" controls></video>
+![](demo/1.gif)
 
 Notice how the Arabic text runs right-to-left (RTL) automatically even though we typed it in a LTR field.
 This is thanks to the BiDi algorithm: it knows what characters run LTR and what characters run RTL,
