@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100%"
+   height="100%"
+   viewBox="0 0 60 60"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:export-filename="D:\dev\anki\addons-dev\bidi_tools\src\icon.png"
+   inkscape:export-xdpi="102.4"
+   inkscape:export-ydpi="102.4"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="8.184027"
+     inkscape:cx="31.708107"
+     inkscape:cy="39.16165"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid20" />
+  </sodipodi:namedview>
+  <defs
+     id="defs9">
+    <rect
+       x="4"
+       y="12"
+       width="32"
+       height="11"
+       id="rect2399" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:20.4994px;line-height:1;font-family:sans-serif;stroke-width:2.19636"
+       x="35.01104"
+       y="56.539211"
+       id="text12279"
+       transform="scale(1.4493222,0.6899777)"><tspan
+         sodipodi:role="line"
+         id="tspan12277"
+         x="35.01104"
+         y="56.539211"
+         style="stroke-width:2.19636" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.6706px;line-height:1;font-family:sans-serif;stroke-width:2.64328"
+       x="3.7408645"
+       y="29.749805"
+       id="text22039"
+       transform="scale(0.76017695,1.3154832)"><tspan
+         sodipodi:role="line"
+         id="tspan22037"
+         x="3.7408645"
+         y="29.749805"
+         style="stroke-width:2.64328" /></text>
+    <text
+       xml:space="preserve"
+       id="text2397"
+       style="line-height:1;font-family:sans-serif;font-size:9.33333333px;white-space:pre;shape-inside:url(#rect2399)" />
+    <text
+       xml:space="preserve"
+       style="font-size:80px;line-height:1;font-family:sans-serif;stroke-width:1.92935"
+       x="16.455725"
+       y="90.119965"
+       id="text11723"
+       transform="scale(1.8027577,0.55470572)"
+       inkscape:export-filename="D:\dev\anki\addons-dev\bidi_tools\src\text11723.png"
+       inkscape:export-xdpi="281.92001"
+       inkscape:export-ydpi="281.92001"><tspan
+         sodipodi:role="line"
+         id="tspan11721"
+         x="16.455725"
+         y="90.119965"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;font-family:'Noto Sans Arabic';-inkscape-font-specification:'Noto Sans Arabic';stroke-width:1.92935">أ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:53.3333px;line-height:1;font-family:sans-serif"
+       x="1.2625463"
+       y="49.628227"
+       id="text13905"><tspan
+         sodipodi:role="line"
+         id="tspan13903"
+         x="1.2625463"
+         y="49.628227"
+         style="font-size:53.3333px">A</tspan></text>
+  </g>
+</svg>
