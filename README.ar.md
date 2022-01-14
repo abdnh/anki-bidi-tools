@@ -32,4 +32,8 @@
      لكن انظر <https://en.wikipedia.org/wiki/Bidirectional_text#Unicode_bidi_support>
      لشرح لاستخدام هذه الحروف.
 
+## أنكي ويب
+
+تستطيع تحميل الإضافة من خلال أنكي ويب: <https://ankiweb.net/shared/info/281067366>
+
 </div>

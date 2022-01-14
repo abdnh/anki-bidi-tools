@@ -129,6 +129,10 @@ The following actions are available in the editor:
      You probably don't need to use any of these as the previous options should cover most cases,
      but see <https://en.wikipedia.org/wiki/Bidirectional_text#Unicode_bidi_support> for an explanation of the characters.
 
+## AnkiWeb
+
+You can download the add-on from AnkiWeb: <https://ankiweb.net/shared/info/281067366>
+
 ## TODO
 
 - [] Improve my ability to explain things and make the text less confusing.

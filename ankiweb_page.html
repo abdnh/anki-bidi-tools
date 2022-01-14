@@ -1,0 +1,25 @@
+<b># BiDi Tools For Anki</b>
+
+An add-on that adds some editor tools for bidirectional text (BiDi)—text containing different types of alphabets that have different directionalities (e.g. mixed English and Arabic text).
+
+Anki provides an option to set each field's direction under the Fields screen, but there are cases when it's necessary to override the direction of certain parts of the field text.
+
+<b>## Usage</b>
+
+The add-on provides buttons to set the direction of the selected text to either LTR (left to right, like the Latin script and most scripts), or RTL (right to left, like in Arabic, Hebrew, Persian, etc.)
+
+<img src="https://raw.githubusercontent.com/abdnh/anki-bidi-tools/master/demo/editor.png" alt="Add-on's buttons in the editor">
+
+The following actions are available in the editor:
+<ol>
+<li><b>Left-To-Right</b>: Apply left-to-right direction to the entire line where the cursor is currently at (technically, it modifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">HTML block element</a> surrounding the text)</li>
+<li><b>Right-To-Left</b>: Ditto, but for RTL.</li>
+<li>More options under the third icon:
+<ul>
+<li><b>LTR Selected</b>: Apply left-to-right to direction to the selected text only.</li>
+<li><b>RTL Selected</b>: Ditto, but for RTL.</li>
+<li><b>Insert Characters</b>: A menu for inserting common Unicode characters used to affect text directionality.
+You probably don't need to use any of these as the previous options should cover most cases, but see https://en.wikipedia.org/wiki/Bidirectional_text#Unicode_bidi_support for an explanation of the characters.</li>
+</ul>
+</li>
+</ol>
