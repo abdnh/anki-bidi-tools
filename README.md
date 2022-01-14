@@ -107,6 +107,8 @@ Luckily for us, we mostly don't have to bother with inserting these invisible ch
 because we can just force the number here to be LTR by wrapping it in some HTML like `<span dir="ltr"></span>`,
 which will fix our problem.
 
+[To be continued]
+
 ## Usage
 
 The add-on provides buttons to set the direction of the selected text to either LTR
