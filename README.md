@@ -135,5 +135,10 @@ You can download the add-on from AnkiWeb: <https://ankiweb.net/shared/info/28106
 
 ## TODO
 
-- [] Improve my ability to explain things and make the text less confusing.
-- [] Add link to my JavaScript BiDi demo when it's finished.
+- [ ] Improve my ability to explain things and make the text less confusing.
+- [ ] Add link to my JavaScript BiDi demo when it's finished.
+
+## Support
+
+Consider supporting me on Ko-fi if you like my add-ons.
+<a href='https://ko-fi.com/U7U8AE997' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
