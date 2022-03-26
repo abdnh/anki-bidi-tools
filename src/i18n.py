@@ -19,7 +19,13 @@ strings = {
     }
 }
 
+def get_current_lang() -> str:
+    try:
+        return anki.lang.current_lang
+    except:
+        return anki.lang.currentLang
+
 def tr(label: str) -> str:
-    langdict = strings.get(anki.lang.currentLang, strings['en'])
+    langdict = strings.get(get_current_lang(), strings['en'])
     translation = langdict.get(label, strings['en'][label])
     return translation
