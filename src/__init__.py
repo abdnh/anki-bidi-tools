@@ -11,9 +11,7 @@ from .i18n import tr
 
 addon_dir = os.path.dirname(__file__)
 config = mw.addonManager.getConfig(__name__)
-config_defaults = mw.addonManager.addonConfigDefaults(__name__)
 mw.addonManager.setWebExports(__name__, r".*\.js")
-
 
 def load_web(webcontent: WebContent, context: Any):
     if isinstance(context, Editor):
@@ -71,10 +69,10 @@ def create_insert_menu(editor: Editor) -> QMenu:
 
 
 actions = (
-    (tr('ltr_block_label'), ltr_block_action, config.get("ltr_block_shortcut", config_defaults["ltr_block_shortcut"])),
-    (tr('rtl_block_label'), rtl_block_action, config.get("rtl_block_shortcut", config_defaults["rtl_block_shortcut"])),
-    (tr('ltr_inline_label'), ltr_inline_action, config.get("ltr_inline_shortcut", config_defaults["ltr_inline_shortcut"])),
-    (tr('rtl_inline_label'), rtl_inline_action, config.get("rtl_inline_shortcut", config_defaults["rtl_inline_shortcut"])),
+    (tr('ltr_block_label'), ltr_block_action, config["ltr_block_shortcut"]),
+    (tr('rtl_block_label'), rtl_block_action, config["rtl_block_shortcut"]),
+    (tr('ltr_inline_label'), ltr_inline_action, config["ltr_inline_shortcut"]),
+    (tr('rtl_inline_label'), rtl_inline_action, config["rtl_inline_shortcut"]),
 )
 
 editor_button_labels = ("ltr", "rtl")
