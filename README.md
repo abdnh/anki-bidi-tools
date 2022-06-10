@@ -45,11 +45,6 @@ and send me the translated strings and I will include them (or you can open a PR
 There are only a few strings to translate. See [i18n.py](./src/i18n.py) for a list of the strings
 and how they are defined for each language.
 
-## TODO
-
-- [ ] Improve my ability to explain things and make the text less confusing.
-- [ ] Add link to my JavaScript BiDi demo when it's finished.
-
 ## Support
 
 Consider supporting me on Ko-fi if you like my add-ons.

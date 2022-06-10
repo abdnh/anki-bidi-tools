@@ -93,3 +93,8 @@ because we can just force the number here to be LTR by wrapping it in some HTML 
 which will fix our problem.
 
 [To be continued]
+
+
+## References
+
+- A JavaScript demo of the BiDi algorithm used for the illustrations in this article: https://www.abdnh.net/bidi-demo
